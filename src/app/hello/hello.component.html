@@ -1,0 +1,15 @@
+ <app-home name={{nameofp}}> </app-home>
+
+ <input (keyup)="onchange($event)"  placeholder="Enter Name" id = "name" [(ngModel)]="nameofp">
+ <button (click) ="onsubmit()" >Add</button>
+ <br>
+ <input placeholder="Enter Phone Number " id = "phone" [(ngModel)]="phone">
+ <button (click) ="onadd()">Add</button>
+ 
+ <p>Your Name is :{{nameofp}}</p>
+ <p>Your Phone is :{{phone}}</p>
+ <app-home [name] = "nameofp"></app-home>
+
+
+
+ 
